@@ -1,8 +1,17 @@
-# LEDOV-eye-tracking-database
-The large-scale eye-tracking database called LEDOV for video salinecy
+LEDOV
+==========
+The large-scale eye-tracking database called LEDOV for video salinecy. Database from Lai Jiang, Mai Xu in Beihang University(2016). 
 
+## Brief introduction
+LEDOV includes **538 videos** with diverse content, containing a total of **179,336 frames** and **6,431 seconds**. The diverse content refers to the daily action, sports, social activity and art performance of human, and the videos of animal and man-man objects are also included. All videos are at least 720p resolution and 24 Hz frame rate. Then, for monitoring the binocular eye movements, a Tobii TX300 eye tracker  was used in our experiment. Moreover, **32 participants** (18 males and 14 females), aging from 20 to 56 (32 on average), were recruited to participate in the eye-tracking experiment. All participants were non-experts for the eye-tracking experiment, with normal/corrected-to-normal vision. During the experiment, the distance between subjects and the monitor was fixed at 65 cm. Before viewing videos, each subject was required to perform a 9-point calibration for the eye tracker. Afterwards, the subjects were asked to free-view videos displayed at random order. Finally, 5,058,178 fixations of all 32 subjects on 538 videos were collected for our eye-tracking database.
 
-Database from Lai Jiang, Mai Xu in Beihang University(2016). 
+For the **establishment details** and **data analysis** of LEDOV, please refer to Section 3 of our [paper](https://arxiv.org/abs/1709.06316).
+
+Some examples of LEDOV are shown below and in **sample.avi**.
+![examples](/figs/data.png "examples")
+
+## How to use
+* **'VideoInfo.xlsx'** and **VideoInfo.mat**
 
 This database contains the fixation data of 538 standard video sequences of our proposed eye-tracking database, LEDOV. In the root directory, the information of videos and subjects are listed in 'VideoInfo.xlsx' and 'SubjectInfo.xlsx', respectively. Besides, for programming in Matlab, the names of the videos are also listed in 'VideoNameList.mat', and 'VideoInfo.mat' includes the video information in the order of video name, frame rate, frame number, and resolution.  
 
