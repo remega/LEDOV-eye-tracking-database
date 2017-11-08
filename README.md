@@ -7,7 +7,7 @@ LEDOV includes **538 videos** with diverse content, containing a total of **179,
 
 For the **establishment details** and **data analysis** of LEDOV, please refer to Section 3 of our [paper](https://arxiv.org/abs/1709.06316).
 
-Some examples of LEDOV are shown below and in **sample.avi**.
+Some examples of LEDOV are shown below and in **'sample.avi'**.
 ![examples](/figs/data.png "examples")
 
 ## Download  
@@ -22,20 +22,12 @@ All 538 videos as well as eye-tracking can be downloaded at Dropbox ([Part1](htt
 *'column 3'*: the duration of the fixation  
 *'column 4-5'*: the position of the fixation (take upper-lift corner as the origin)
 
-This database contains the fixation data of 538 standard video sequences of our proposed eye-tracking database, LEDOV. In the root directory, the information of videos and subjects are listed in 'VideoInfo.xlsx' and 'SubjectInfo.xlsx', respectively. Besides, for programming in Matlab, the names of the videos are also listed in 'VideoNameList.mat', and 'VideoInfo.mat' includes the video information in the order of video name, frame rate, frame number, and resolution.  
+As a test, you can run **'demo.m'** to generate the heat-map series of the target video.  
 
-The fixation data of each video are recorded in 'Data.mat' in corresponding sub-fold. In each Data.fixdata, each row refers to a recorded fixation with the information as follows, 
-'column 1': the index of subject that the fixation belongs to  
-'column 2': the timestamp(ms) that the fixation starts  
-'column 3': the duration of the fixation  
-'column 4-5': the position of the fixation (take upper-lift corner as origin )  
+## Citation
+You are welcome to freely use this database, and please cite with the following Bibtex code:
 
-As a test, you can run 'demo.m' to generate the heat-map series of the target video.  
-
-The detail of LEDOV is intrdouced in https://arxiv.org/abs/1709.06316
-
-Please cite with the following Bibtex code:
-
+```
 @InProceedings{Jiang2017predicting,  
 author = {Lai Jiang, and Mai Xu, and Zulin Wang},  
 title = {Predicting Video Saliency with Object-to-Motion CNN and Two-layer Convolutional LSTM},  
@@ -43,5 +35,7 @@ booktitle = {arXiv preprint arXiv:1709.06316},
 month = {Sep.},  
 year = {2017}  
 }
+```
 
-Should you have any queries, please contact jianglai.china@buaa.edu.cn
+## Contact
+Should you have any queries, please contact jianglai.china@buaa.edu.cn / jianglai.china@aliyun.com
