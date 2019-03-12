@@ -5,13 +5,13 @@ The large-scale eye-tracking database called LEDOV for video salinecy. Database 
 ## Brief introduction
 LEDOV includes **538 videos** with diverse content, containing a total of **179,336 frames** and **6,431 seconds**. The diverse content refers to the daily action, sports, social activity and art performance of human, and the videos of animal and man-man objects are also included. All videos are at least 720p resolution and 24 Hz frame rate. Then, for monitoring the binocular eye movements, a Tobii TX300 eye tracker  was used in our experiment. Moreover, **32 participants** (18 males and 14 females), aging from 20 to 56 (32 on average), were recruited to participate in the eye-tracking experiment. All participants were non-experts for the eye-tracking experiment, with normal/corrected-to-normal vision. During the experiment, the distance between subjects and the monitor was fixed at 65 cm. Before viewing videos, each subject was required to perform a 9-point calibration for the eye tracker. Afterwards, the subjects were asked to free-view videos displayed at random order. Finally, 5,058,178 fixations of all 32 subjects on 538 videos were collected for our eye-tracking database.
 
-For the **establishment details** and **data analysis** of LEDOV, please refer to Section 3 of our [paper](https://arxiv.org/abs/1709.06316).
+For the **establishment details** and **data analysis** of LEDOV, please refer to Section 3 of our [paper](http://openaccess.thecvf.com/content_ECCV_2018/html/Lai_Jiang_DeepVS_A_Deep_ECCV_2018_paper.html).
 
 Some examples of LEDOV are shown below and in **'sample.avi'**.
 ![examples](/figs/data.png "examples")
 
 ## Download  
-All 538 videos as well as eye-tracking can be downloaded at Dropbox ([Part1](https://www.dropbox.com/s/xqrae7bc73jnncr/LEDOV.zip.001?dl=0) and [Part2](https://www.dropbox.com/s/pxbahpwkea9icw0/LEDOV.zip.002?dl=0)) and [BaiduYun](http://pan.baidu.com/s/1pLmfjCZ)
+All 538 videos as well as eye-tracking can be downloaded at [Dropbox](https://www.dropbox.com/s/pc8symd9i3cky1q/LEDOV.zip?dl=0) and [BaiduYun](http://pan.baidu.com/s/1pLmfjCZ)
 
 ## How to use  
 * **'VideoInfo.xlsx'** and **'SubjectInfo.xlsx'** list the information of videos and subjects.  
@@ -28,13 +28,13 @@ As a test, you can run **'demo.m'** to generate the heat-map series of the targe
 You are welcome to freely use this database, and please cite with the following Bibtex code:
 
 ```
-@InProceedings{Jiang2017predicting,  
-author = {Lai Jiang, and Mai Xu, and Zulin Wang},  
-title = {Predicting Video Saliency with Object-to-Motion CNN and Two-layer Convolutional LSTM},  
-booktitle = {arXiv preprint arXiv:1709.06316},  
-month = {Sep.},  
-year = {2017}  
-}
+@InProceedings{Jiang_2018_ECCV,
+author = {Jiang, Lai and Xu, Mai and Liu, Tie and Qiao, Minglang and Wang, Zulin},
+title = {DeepVS: A Deep Learning Based Video Saliency Prediction Approach},
+booktitle = {The European Conference on Computer Vision (ECCV)},
+month = {September},
+year = {2018}
+} 
 ```
 
 ## Contact
