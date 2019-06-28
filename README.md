@@ -24,6 +24,9 @@ All 538 videos as well as eye-tracking can be downloaded at [Dropbox](https://ww
 
 As a test, you can run **'demo.m'** to generate the heat-map series of the target video.  
 
+## Evaluation metrics
+The evaluartion codes (AUC, NSS, CC and KL) we used in our paper can be refered in ./metrics. A example of using them can be seen in ./metrics/TestLEDOV.m 
+
 ## Citation
 You are welcome to freely use this database, and please cite with the following Bibtex code:
 
