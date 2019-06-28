@@ -13,7 +13,6 @@ end
 if any(map2(:))
     map2 = map2/sum(map2(:));
 end
-epps = 10^(-7);
 
 % compute KL-divergence
-score = sum(sum(map2 .* log(epps + map2./(map1+epps))));
+score = sum(sum(map2 .* log(eps + map2./(map1+eps))));
