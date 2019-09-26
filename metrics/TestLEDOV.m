@@ -17,7 +17,7 @@ video_size=Data.VideoSize;
 width=video_size(1);
 height=video_size(2);
 video_fixation=Data.fixdata;
-
+distMatrix = getdistMatrix( height, width );
 fixationPerFrame=cell(1,num_frames);
 frame_durationMs=1000/frames_rate;
 
@@ -86,7 +86,7 @@ color_map=colormap(jet(256));
     y=fixationPerFrame{k}(2,:);
 	saliencymap = imresize(tempframe,[height, width]);
 	saliencymap = imfilter(saliencymap, fspecial('gaussian', round(height/7.5), round(height/30)));	
-
+   saliencymap=saliencymap.*distMatrix;
    saliencymap=pm_norm(saliencymap);
    saliencymap(isnan(saliencymap))=0;
    fixationmap=zeros(height, width);
