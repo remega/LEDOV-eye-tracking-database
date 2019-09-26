@@ -6,7 +6,7 @@ function my_mask= make_gauss_masks4(x,y,my_size,fixsize)
 % Date      : 4 Jan. 2008
 
 
-W = 2*0.3; %Full width at half max in visual degrees of angle for the Gaussian
+W = 2; %Full width at half max in visual degrees of angle for the Gaussian
 W = W*40; %For my experiments, 1 degree of visual angle is 60 pixels  40
 
 %Convert full width at half max to variance
